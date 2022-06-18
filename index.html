@@ -26,9 +26,11 @@
         <img class="redo" src="Icons/Redo.svg" alt="Pencil">
         <img class="undo" src="Icons/Undo.svg" alt="Pencil">
     </div>
+
+    <!-- Pencil and Eraser -->
     <div class="pencil-tool">
         <div class="pencil-width-container">
-            <input type="range" min="2" max="10" value="4">
+            <input type="range" min="2" max="10" value="2" class="pencil-width">
         </div>
         <div class="pencil-color-container">
             <div class="black pencil-color"></div>
@@ -38,10 +40,29 @@
     </div>
 
     <div class="eraser-tool">
-            <input type="range" min="2" max="10" value="4">
+            <input type="range" min="2" max="10" value="8" class="eraser-width">
     
     </div>
 
+
+    <!-- Sticky notes -->
+    <!-- <div class="sticky-container">
+        <div class="header-container">
+            <div class="minimize"></div>
+            <div class="remove"></div>
+        </div>
+        <div class="note-container">
+            <textarea></textarea>
+        </div>
+
+    </div> -->
+
+
+    <!-- CANVAS is an HTML element to perform graphics, Broeser provides API for it-->
+
+    <canvas></canvas>
+
     <script src="./tools.js"></script>
+    <script src="./canvas.js"></script>
 </body>
 </html>

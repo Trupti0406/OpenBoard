@@ -1,0 +1,30 @@
+Real Time Open Board
+
+This is a realtime open board project for real time graphical drawing. 
+I've used canvas API and also web socket's socket io library.
+
+API: Canvas API(for 2D graphical drawing)
+Realtime Drawing: Socket io, Express(server)
+
+Features:
+1) Pen: Pen of multiple colours and width.
+2) Eraser: Eraser to erase the drawings, size of eraser can be changed.
+3) Dowload: User can download the openboard image/ content they've created.
+4) Upload: User can upload an image from their local storage.
+5) Notes: User will be able to add sticky notes on their board with special drag and drop effect.
+6) Undo 
+7) Redo
+
+Deployed 
+
+
+Tool ---> API ---> To draw graphics
+strokeStyle => width increase
+
+beginPath =>
+moveTO =>
+lineTo =>
+stroke =>
+
+
+To Move according to your mouse 
