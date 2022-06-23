@@ -1,0 +1,177 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+.options-container {
+  height: 4rem;
+  width: 4rem;
+  background-color: #f1f2f6;
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-size: 2rem;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  cursor: pointer;
+}
+
+.tools-container {
+  display: flex;
+  height: 5rem;
+  width: 55vw;
+  background-color: #f1f2f6;
+  justify-content: space-around;
+  position: absolute;
+  top: 2rem;
+  left: 25vw;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.scale-tools {
+  animation-name: scale-tools;
+  animation-duration: 0.5s;
+}
+
+@keyframes scale-tools {
+  0% {
+    transform: scale(0.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.tools-container > * {
+  display: block;
+  width: 4rem;
+  cursor: pointer;
+}
+
+.pencil-tool {
+  height: 5rem;
+  width: 6.5rem;
+  position: absolute;
+  top: 7rem;
+  left: 25vw;
+  background-color: #f1f2f6;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 3px;
+  display: none;
+}
+
+.pencil-width-container {
+  height: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pencil-width-container input {
+  width: 80%;
+  cursor: pointer;
+}
+
+.pencil-color-container {
+  height: calc(100% - 2rem);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.pencil-color {
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.black {
+  background-color: black;
+}
+.red {
+  background-color: red;
+}
+.blue {
+  background-color: blue;
+}
+
+
+.eraser {
+  cursor: url(myBall.cur),auto;
+}
+.eraser-tool {
+  height: 2rem;
+  width: 6.5rem;
+  background-color: #f1f2f6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 7rem;
+  left: 33vw;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  display: none;
+}
+
+.eraser-tool input {
+  width: 80%;
+  cursor: pointer;
+}
+
+/* =========Sticky notes css============== */
+
+.sticky-container {
+  height: 15rem;
+  width: 15rem;
+  position: absolute;
+  top: 15rem;
+  left: 10rem;
+}
+
+.header-container {
+  height: 2rem;
+  background-color: #f1f2f6;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.header-container > * {
+  height: 1.3rem;
+  width: 1.3rem;
+  margin-right: 0.5rem;
+}
+
+.minimize {
+  margin-bottom: 0.3rem;
+  cursor: pointer;
+}
+
+.remove {
+  cursor: pointer;
+}
+
+.note-container {
+  height: calc(100% - 2rem);
+  /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
+  border: 2px solid #f1f2f6;
+}
+
+textarea {
+  height: 100%;
+  width: 100%;
+  outline: none;
+  border: none;
+  resize: none;
+}
+img{
+    height: 100%;
+    width: 100%;
+}
+

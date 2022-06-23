@@ -28,3 +28,26 @@ stroke =>
 
 
 To Move according to your mouse 
+// tool.beginPath(); //new graphic / new path
+// tool.moveTo(10, 10); //start point
+// tool.lineTo(100, 150); //end point
+// tool.stroke(); // to fill color in the invisible
+
+// tool.beginPath();
+// tool.moveTo(100, 200);
+// tool.lineTo(200, 200);
+// tool.stroke();
+
+// =============== I want to start my path whenever i click
+// mousedown => Start new path
+// mouse mover => Path fill
+// mouse up => End path
+
+
+Socket io: Realtime Data Flow
+Dependecies:
+We'd need a server, we'll make that server through Express
+
+
+Why install NodeMod ??
+So that even if our application crashes it can restart 
